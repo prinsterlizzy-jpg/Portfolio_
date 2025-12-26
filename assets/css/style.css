@@ -692,3 +692,44 @@ dialog[open] {
 body.dark .hero-img img {
   box-shadow: 0 10px 40px rgba(245, 197, 66, 0.25);
 }
+/* TECH STACK SCROLL */
+.tech-stack {
+  background: #0f1724;
+  padding: 20px 0;
+  overflow: hidden;
+}
+
+.stack-scroll {
+  display: flex;
+  gap: 40px;
+  white-space: nowrap;
+  animation: scroll 20s linear infinite;
+}
+
+.stack-scroll span {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* Animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.stack-scroll:hover {
+  animation-play-state: paused;
+}
+body.light .tech-stack {
+  background: #f3f4f6;
+}
+
+body.light .stack-scroll span {
+  color: #111;
+}
