@@ -3,17 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Skills | Serifat</title>
-<meta name="description" content="Serifat -- Python Developer, Data Analyst, Cloud Computing Enthusiast. Portfolio and blog.">
-<meta name="keywords" content="Python Developer, Data Analyst, Cloud Computing, Automation, Portfolio">
-<meta name="author" content="Serifat">
+  <title>Skills | Serifat Bukola</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Serifat Bukola -- Python Developer, Data Analyst, Cloud Computing Enthusiast. Technical skills and expertise.">
+  <meta name="keywords" content="Python Developer, Data Analyst, Cloud Computing, Automation, Portfolio">
+  <meta name="author" content="Serifat Bukola">
+
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-<!-- Link to CSS -->
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
-</head>
-<!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PR4EE58S72"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -23,32 +27,28 @@
 </head>
 
 <body>
+
+<!-- ================= NAVBAR ================= -->
 <header class="navbar">
   <div class="container nav-flex">
 
-    <!-- LEFT: LOGO + NAME -->
     <div class="nav-left">
       <a href="index.html" class="logo">
-        <img src="https://github.com/prinsterlizzy-jpg/serifat-website-/blob/main/images/IMG_5643.jpeg?raw=true"
-             alt="Serifat Logo">
+        <img src="https://github.com/prinsterlizzy-jpg/serifat-website-/blob/main/images/IMG_5643.jpeg?raw=true" alt="Serifat Logo">
       </a>
       <span class="brand-text">&lt;Serifat_Codes/&gt;</span>
     </div>
-    <!-- RIGHT: THEME + MENU -->
+
     <div class="nav-right">
-      <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
-        🌙
-      </button>
-      <button id="menuToggle" class="menu-toggle" aria-label="Toggle menu">
-        ☰
-      </button>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+      <button id="menuToggle" class="menu-toggle" aria-label="Toggle menu">☰</button>
     </div>
-    <!-- NAV LINKS -->
+
     <nav class="nav-menu">
       <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="skills.html">Skills</a></li>
+        <li><a href="skills.html" class="active">Skills</a></li>
         <li><a href="projects/index.html">Projects</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="blog/index.html">Blog</a></li>
@@ -56,36 +56,15 @@
         <li><a href="assets/cv/Serifat_Bukola_CV.pdf" download>CV</a></li>
       </ul>
     </nav>
+
   </div>
 </header>
-</section>
-<button id="openDialog">Click Me</button>
-<dialog id="myDialog">
-  <p>🎄 Merry Christmas and Happy New Year 🎉</p>
-  <button id="closeDialog">OK</button>
-</dialog>
-<script>
-  const dialog = document.getElementById('myDialog');
-  const openBtn = document.getElementById('openDialog');
-  const closeBtn = document.getElementById('closeDialog');
 
-  if (!dialog.showModal) {
-    alert("Dialog not supported in this browser");
-  }
-
-  openBtn.addEventListener('click', () => {
-    dialog.showModal();
-  });
-
-  closeBtn.addEventListener('click', () => {
-    dialog.close();
-  });
-</script>
 <!-- ================= HERO ================= -->
 <section class="page-hero">
   <div class="container">
     <h1>My Skills</h1>
-    <p>Technologies, tools, and expertise I use to build solutions.</p>
+    <p>Technologies, tools, and expertise I use to build scalable solutions.</p>
   </div>
 </section>
 
@@ -93,7 +72,6 @@
 <section class="skills-section">
   <div class="container">
 
-    <!-- Programming -->
     <div class="skill-category">
       <h2>🐍 Programming & Development</h2>
       <div class="skills-grid">
@@ -106,18 +84,11 @@
       </div>
     </div>
 
-    <!-- Data -->
     <div class="skill-category">
       <h2>📊 Data Analysis</h2>
       <div class="skills-grid">
-      <div class="skill-card">
-  <h3>Databases & SQL</h3>
-  <ul>
-    SQL (SELECT, JOIN, GROUP BY)
-    SQLite
-    Basic database design
-  </ul>
-</div>
+        <span class="skill-card">SQL (SELECT, JOIN, GROUP BY)</span>
+        <span class="skill-card">SQLite</span>
         <span class="skill-card">Excel</span>
         <span class="skill-card">Power BI</span>
         <span class="skill-card">Pandas</span>
@@ -127,7 +98,6 @@
       </div>
     </div>
 
-    <!-- Cloud -->
     <div class="skill-category">
       <h2>☁️ Cloud Computing</h2>
       <div class="skills-grid">
@@ -139,7 +109,6 @@
       </div>
     </div>
 
-    <!-- Automation -->
     <div class="skill-category">
       <h2>⚙️ Automation</h2>
       <div class="skills-grid">
@@ -150,7 +119,6 @@
       </div>
     </div>
 
-    <!-- Tools -->
     <div class="skill-category">
       <h2>🛠 Tools & Platforms</h2>
       <div class="skills-grid">
@@ -173,10 +141,12 @@
     <a href="contact.html" class="btn">Contact Me</a>
   </div>
 </section>
-    <!-- FOOTER -->
+
+<!-- ================= FOOTER ================= -->
 <footer class="footer">
   <div class="container footer-content">
     <p>© 2025 <strong>Serifat Bukola</strong>. All rights reserved.</p>
+  </div>
 </footer>
 
 <script src="assets/js/script.js"></script>
