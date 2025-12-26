@@ -46,11 +46,11 @@
         ☰
       </button>
     </div>
-    <!-- NAV LINKS -->
-    <nav class="nav-menu">
+      <!-- NAV LINKS -->
+    <nav class="nav-menu" role="navigation" aria-label="Main Navigation">
       <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
         <li><a href="skills.html">Skills</a></li>
         <li><a href="projects/index.html">Projects</a></li>
         <li><a href="services.html">Services</a></li>
@@ -61,12 +61,14 @@
     </nav>
   </div>
 </header>
-</section>
-<button id="openDialog">Click Me</button>
-<dialog id="myDialog">
-  <p>🎄 Merry Christmas and Happy New Year 🎉</p>
-  <button id="closeDialog">OK</button>
-</dialog>
+
+<main>
+  <!-- Dialog Section -->
+  <button id="openDialog" aria-haspopup="dialog">🎁 Open Greeting</button>
+  <dialog id="myDialog" aria-labelledby="dialogTitle" aria-describedby="dialogDesc">
+    <p id="dialogDesc">🎄 Merry Christmas and Happy New Year 🎉</p>
+    <button id="closeDialog">OK</button>
+  </dialog>
 <script>
   const dialog = document.getElementById('myDialog');
   const openBtn = document.getElementById('openDialog');
